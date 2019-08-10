@@ -7,7 +7,7 @@ if(!$files){
 	foreach($files as $ignore=>$file){
 		$conf=parse_ini_file($file,true);
 		if(!$conf){
-			echo "<div class=problem>'$file'' doesn't exist. please fix this.</div>";
+			echo "<div class=problem>'$file' doesn't exist. please fix this.</div>";
 		}else{
 			echo "<div class=username>".$conf["twtxt"]["nick"]."</div>";
 		}
